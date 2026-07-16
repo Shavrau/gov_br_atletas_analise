@@ -1,0 +1,6 @@
+resources:
+  jobs:
+    bronze_to_gold_job_yml:
+      name: bronze_to_gold.job.yml
+      queue:
+        enabled: true
