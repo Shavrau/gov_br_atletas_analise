@@ -25,3 +25,7 @@ targets:
       # This runs as rhian.souza@programmers.com.br in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
       user_name: rhian.souza@programmers.com.br
+
+variables:
+  warehouse_id:
+    default: 3c88b7bfb51daab1

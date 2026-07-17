@@ -4,3 +4,7 @@ resources:
       name: bronze_to_gold.job.yml
       queue:
         enabled: true
+      tasks:
+        - notebook_task:
+            notebook_path: ../01_bronze/ingest_payment.py
+          task_key: job_bronze_ingest
