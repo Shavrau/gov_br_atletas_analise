@@ -17,4 +17,4 @@ def save_to_bronze(
 # Retrieved 2026-07-16, License - CC BY-SA 4.0
 
 def remove_bda_chars_from_columns(df):
-    return  df.select([col(x).alias(x.replace(" ", "_").replace("/", "").replace("%", "pct").replace("(", "").replace(")", "")) for x in df.columns])
+    return  df.select([col(x).alias(x.replace(" ", "_").replace("/", "_").replace("%", "_").replace("(", "_").replace(")", "_")) for x in df.columns])
